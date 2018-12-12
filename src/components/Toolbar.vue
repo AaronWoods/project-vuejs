@@ -16,6 +16,13 @@
     </v-toolbar>
 </template>
 
-<<script>
-    
+<script>
+    export default {
+        name: 'Toolbar',
+    data () {
+        return {
+        //
+        }
+    }
+  }
 </script>
