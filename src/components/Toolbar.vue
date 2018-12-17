@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
       <v-btn
         flat
-        href="https://github.com/AaronWoods"
+        :href="gitHubHook"
         target="_blank"
       >
         <span class="mr-2">Github</span>
@@ -21,7 +21,7 @@
         name: 'Toolbar',
     data () {
         return {
-        //
+            gitHubHook: "https://github.com/AaronWoodsss"
         }
     }
   }
