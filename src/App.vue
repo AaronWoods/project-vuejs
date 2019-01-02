@@ -5,7 +5,9 @@
       <app-side-drawer :drawer='drawer'></app-side-drawer>
       <app-footer></app-footer>
       <v-content>
-        <app-home></app-home>
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About</router-link>
+        <router-view/>
       </v-content>
     </v-app>
   </div>
@@ -16,7 +18,6 @@
 import AppToolbar from './components/AppToolbar'
 import AppSideDrawer from './components/AppSideDrawer'
 import AppFooter from './components/AppFooter'
-import AppHome from './components/AppHome'
 
 export default {
   name: 'App',
@@ -24,13 +25,12 @@ export default {
     AppToolbar,
     AppSideDrawer,
     AppFooter,
-    AppHome
   },
   data () {
     return {
       gitHubHook: "https://github.com/AaronWoods",
       siteTitle: "project-vuejs",
-      drawer: true
+      drawer: false
     }
   },
   methods:{

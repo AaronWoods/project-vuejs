@@ -15,7 +15,7 @@
                     class="blue lighten-2 mt-5"
                     dark
                     large
-                    href="/pre-made-themes"
+                    href="/about"
                     >
                     Get Started
                     </v-btn>
