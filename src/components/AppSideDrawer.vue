@@ -6,7 +6,7 @@
             app
         >
         <v-list dense>
-            <v-list-tile @click="doThis">
+            <v-list-tile :to="{path:'/about'}" @click="doThis">
             <v-list-tile-action>
                 <v-icon>dashboard</v-icon>
             </v-list-tile-action>

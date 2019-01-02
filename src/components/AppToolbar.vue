@@ -1,7 +1,9 @@
 <template>
   <v-toolbar app fixed clipped-left>
       <v-toolbar-side-icon @click.stop="toggleDrawer"></v-toolbar-side-icon>
-      <v-toolbar-title>{{siteTitle}}</v-toolbar-title>
+      <router-link id="toolBarHomeButton" to="/">
+        <v-toolbar-title >{{siteTitle}}</v-toolbar-title>
+      </router-link>
       <v-spacer></v-spacer>
     <v-btn
       flat
@@ -30,3 +32,10 @@
       }
   }
 </script>
+
+<style scoped>
+#toolBarHomeButton {
+  color: inherit;
+  text-decoration: inherit;
+}
+</style>

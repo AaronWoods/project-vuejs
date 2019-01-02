@@ -5,8 +5,6 @@
       <app-side-drawer :drawer='drawer'></app-side-drawer>
       <app-footer></app-footer>
       <v-content>
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
         <router-view/>
       </v-content>
     </v-app>
