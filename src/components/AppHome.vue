@@ -3,14 +3,15 @@
         <section>
             <v-parallax :src="getImg(0)" height="600">
                 <v-layout
-                    column
+                    row
                     align-center
-                    justify-center
+                    justify-end
                     class="white--text"
+                    fill-height
                 >
                     <img src=".././assets/vuetify.png" alt="Vuetify.js" height="200">
-                    <h1 class="white--text mb-2 display-1 text-xs-center">Welcome to my Website</h1>
-                    <div class="subheading mb-3 text-xs-center">*Under Construction*</div>
+                    <h1 class="white--text display-2 ">Welcome to my Website</h1>
+                    <div class="subheading ">*Under Construction*</div>
                     <v-btn
                     class="blue lighten-2 mt-5"
                     dark
@@ -177,9 +178,9 @@ export default {
         getImg : function(index){
             switch(index){
                 case 0:
-                    return require(".././assets/hero.jpeg")
+                    return require(".././assets/planes.jpg")
                 case 1:
-                    return require(".././assets/section.jpg")
+                    return require(".././assets/planes.jpg")
                 case 2:
                     return require()
                 default:
